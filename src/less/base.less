@@ -1,0 +1,78 @@
+/* 行为相关颜色 */
+@h-color-primary: #007aff;
+@h-color-success: #4cd964;
+@h-color-warning: #f0ad4e;
+@h-color-error: #dd524d;
+
+/* 文字基本颜色 */
+@h-text-color:#333;//基本色
+@h-text-color-inverse:#fff;//反色
+@h-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+@h-text-color-placeholder: #808080;
+@h-text-color-disable:#c0c0c0;
+@h-text-color-sub:#ccc;
+
+/* 背景颜色 */
+@h-bg-color:#ffffff;
+@h-bg-color-grey:#f8f8f8;
+@h-bg-color-hover:#f1f1f1;//点击状态颜色
+@h-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+@h-border-color:#c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+@h-font-size-sm:24px;
+@h-font-size-base:28px;
+@h-font-size-lg:36px;
+
+/* icon尺寸*/
+@h-icon-size-sm:38px;
+@h-icon-size-base:50px;
+@h-icon-size-lg:70px;
+
+/* 图片尺寸 */
+@h-img-size-sm:40px;
+@h-img-size-base:52px;
+@h-img-size-lg:80px;
+
+/* Border Radius */
+@h-border-radius-sm: 4px;
+@h-border-radius-base: 6px;
+@h-border-radius-lg: 12px;
+@h-border-radius-circle: 50%;
+
+/* 水平间距 */
+@h-spacing-row-sm: 10px;
+@h-spacing-row-base: 20px;
+@h-spacing-row-lg: 30px;
+
+/* 垂直间距 */
+@h-spacing-col-sm: 8px;
+@h-spacing-col-base: 16px;
+@h-spacing-col-lg: 24px;
+
+/* 透明度 */
+@h-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+@h-color-title: #2C405A; // 文章标题颜色
+@h-font-size-title:40px;
+@h-color-subtitle: #555555; // 二级标题颜色
+@h-font-size-subtitle:36px;
+@h-color-paragraph: #3F536E; // 文章段落颜色
+@h-font-size-paragraph:30px;
+
+
+// 公共类
+.h-overstep(@num){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+}
